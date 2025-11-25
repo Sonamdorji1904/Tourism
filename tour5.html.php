@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>Happiness Horizon Travel</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#festivals">Festivals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            </div>
-        </div>
-    </nav>
+    <?php require_once 'includes/templates/header.html.php'; ?>
+
 
     <!-- Tour Detail Hero -->
     <section class="tour-detail-hero">
@@ -35,13 +22,13 @@
         <div class="tour-detail-hero-content">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html">Home</a> / <a href="tours.html">Tours</a> / Quick Bhutan Getaway
+                    <a href="index.html.php">Home</a> / <a href="tours.html.php">Tours</a> / Best of Bhutan Tours
                 </div>
-                <h1>Quick Bhutan Getaway</h1>
-                <p class="tour-subtitle">Perfect introduction to the Land of Happiness</p>
+                <h1>Best of Bhutan Tours</h1>
+                <p class="tour-subtitle">Experience the ultimate journey through Bhutan's cultural and natural wonders.</p>
                 <div class="tour-quick-info">
                     <div class="quick-info-item">
-                        <strong>Duration:</strong> 5 Days / 4 Nights
+                        <strong>Duration:</strong> 9 Days / 8 Nights
                     </div>
                     <div class="quick-info-item">
                         <strong>Best Time:</strong> March - May, Sept - Nov
@@ -58,8 +45,13 @@
                 <div class="tour-main-content">
                     <div class="tour-section">
                         <h2>Tour Overview</h2>
-                        <p class="lead">The Quick Bhutan Getaway is the perfect package for travelers who wish to experience the essence of Bhutan in a short time. Designed for those who want to check the iconic Tiger's Nest Monastery off their travel list while gaining a brief yet enriching glimpse into the country's natural beauty, unique culture, and way of life.</p>
-                        <p>Your journey begins in Thimphu, Bhutan's charming capital city, where you will visit some of the most significant historical, cultural, and spiritual landmarks. The highlight of the getaway is a scenic hike to the Tiger's Nest (Paro Taktsang), Bhutan's most famous and awe-inspiring attraction, dramatically perched on a cliffside.</p>
+                        <p class="lead">Experience the best of Bhutan on this 9-day Cultural & Nature Tour, a journey through the
+                            Himalayas that blends stunning landscapes with rich heritage. Trek to the iconic Tiger’s Nest Monastery in Paro,
+                            explore Thimphu’s vibrant capital with its Buddha Dordenma Statue and markets, and visit the majestic Punakha Dzong
+                            at the confluence of two rivers. Wander the serene Phobjikha Valley, discover the spiritual heart of Bumthang with its
+                            ancient monasteries, and enjoy immersive cultural experiences such as traditional archery, textile weaving, and local cooking.
+                            Along the way, savor authentic Bhutanese cuisine, witness colorful festivals, hike through pristine forests, and learn about
+                            Bhutan’s unique philosophy of Gross National Happiness, making this an unforgettable journey through nature, culture, and spirituality.</p>
                     </div>
 
                     <div class="tour-section">
@@ -76,7 +68,7 @@
 
                     <div class="tour-section">
                         <h2>Detailed Itinerary</h2>
-                        
+
                         <div class="itinerary-day">
                             <div class="day-header">
                                 <div class="day-number">Day 1</div>
@@ -164,6 +156,50 @@
                                 <p class="farewell">Tashi Delek! May the blessings of Bhutan accompany you wherever you go.</p>
                             </div>
                         </div>
+                        <div class="itinerary-day">
+                            <div class="day-header">
+                                <div class="day-number">Day 6</div>
+                                <h3>Departure from Paro</h3>
+                            </div>
+                            <div class="day-content">
+                                <p>After an early breakfast, we will drop you to Paro International Airport for your onward flight. We hope your journey has been filled with unforgettable experiences and beautiful memories.</p>
+                                <p><strong>Meals:</strong> Breakfast</p>
+                                <p class="farewell">Tashi Delek! May the blessings of Bhutan accompany you wherever you go.</p>
+                            </div>
+                        </div>
+                        <div class="itinerary-day">
+                            <div class="day-header">
+                                <div class="day-number">Day 7</div>
+                                <h3>Departure from Paro</h3>
+                            </div>
+                            <div class="day-content">
+                                <p>After an early breakfast, we will drop you to Paro International Airport for your onward flight. We hope your journey has been filled with unforgettable experiences and beautiful memories.</p>
+                                <p><strong>Meals:</strong> Breakfast</p>
+                                <p class="farewell">Tashi Delek! May the blessings of Bhutan accompany you wherever you go.</p>
+                            </div>
+                        </div>
+                        <div class="itinerary-day">
+                            <div class="day-header">
+                                <div class="day-number">Day 8</div>
+                                <h3>Departure from Paro</h3>
+                            </div>
+                            <div class="day-content">
+                                <p>After an early breakfast, we will drop you to Paro International Airport for your onward flight. We hope your journey has been filled with unforgettable experiences and beautiful memories.</p>
+                                <p><strong>Meals:</strong> Breakfast</p>
+                                <p class="farewell">Tashi Delek! May the blessings of Bhutan accompany you wherever you go.</p>
+                            </div>
+                        </div>
+                        <div class="itinerary-day">
+                            <div class="day-header">
+                                <div class="day-number">Day 9</div>
+                                <h3>Departure from Paro</h3>
+                            </div>
+                            <div class="day-content">
+                                <p>After an early breakfast, we will drop you to Paro International Airport for your onward flight. We hope your journey has been filled with unforgettable experiences and beautiful memories.</p>
+                                <p><strong>Meals:</strong> Breakfast</p>
+                                <p class="farewell">Tashi Delek! May the blessings of Bhutan accompany you wherever you go.</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="tour-section">
@@ -236,16 +272,16 @@
                             </div>
 
                             <div class="form-group">
-                            <label for="meal">Meal Types</label>
-                            <select id="meal" name="meal">
-                                <option value="">Select a meal type (optional)</option>
-                                <option value="EP">European Plan (EP)</option>
-                                <option value="CP">Continental Plan (CP)</option>
-                                <option value="BP">Bermuda Plan (BP)</option>
-                                <option value="MAP">Modified American Plan (MAP)</option>
-                                <option value="AP">American Plan (AP)</option>
-                            </select>
-                        </div>
+                                <label for="meal">Meal Types</label>
+                                <select id="meal" name="meal">
+                                    <option value="">Select a meal type (optional)</option>
+                                    <option value="EP">European Plan (EP)</option>
+                                    <option value="CP">Continental Plan (CP)</option>
+                                    <option value="BP">Bermuda Plan (BP)</option>
+                                    <option value="MAP">Modified American Plan (MAP)</option>
+                                    <option value="AP">American Plan (AP)</option>
+                                </select>
+                            </div>
 
                             <button type="submit" class="btn btn-primary btn-full">Request Quote</button>
                         </form>
@@ -263,10 +299,10 @@
                             <strong>Duration:</strong>
                             <span>5 Days / 4 Nights</span>
                         </div>
-                        <div class="info-item">
+                        <!-- <div class="info-item">
                             <strong>Difficulty:</strong>
                             <span>Easy</span>
-                        </div>
+                        </div> -->
                         <div class="info-item">
                             <strong>Group Size:</strong>
                             <span>2-15 people</span>
@@ -277,7 +313,7 @@
                         </div>
                         <div class="info-item">
                             <strong>Destinations:</strong>
-                            <span>Thimphu, Punakha, Paro, Wangduephodrang</span>
+                            <span>Thimphu, Punakha, Paro, Gangtey & Phobjikha in W/phodrang and Bumthang</span>
                         </div>
                     </div>
 
@@ -307,7 +343,7 @@
                     <div class="tour-content">
                         <h3>Taste of Happiness</h3>
                         <p>Immerse yourself in Bhutan's rich culture and breathtaking landscapes.</p>
-                        <a href="tour-detail.html" class="btn btn-outline">View Details</a>
+                        <a href="tour2.html" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
 
@@ -319,7 +355,7 @@
                     <div class="tour-content">
                         <h3>The Living Heritage</h3>
                         <p>Discover Bhutan's living heritage where ancient traditions meet natural beauty.</p>
-                        <a href="tour-detail.html" class="btn btn-outline">View Details</a>
+                        <a href="tour3.html" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
 
@@ -331,7 +367,7 @@
                     <div class="tour-content">
                         <h3>Honeymoon Package</h3>
                         <p>Celebrate your love in the mystical Kingdom of Bhutan.</p>
-                        <a href="tour-detail.html" class="btn btn-outline">View Details</a>
+                        <a href="tour6.html" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
             </div>
@@ -339,46 +375,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Happiness Horizon Travel</h3>
-                    <p>Where Every Journey Begins with Happiness</p>
-                    <p class="tagline">Tashi Delek!</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="tours.html">Tours</a></li>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#festivals">Festivals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#visa">Visa Information</a></li>
-                        <li><a href="#policy">Cancellation Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect With Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Happiness Horizon Travel. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <?php require_once 'includes/templates/footer.html.php'; ?>
+
 
     <script>
         function toggleMenu() {
@@ -396,4 +394,5 @@
         });
     </script>
 </body>
+
 </html>

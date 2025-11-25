@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +12,10 @@
     <!-- Tailwind Play CDN for utility classes (used for responsive font sizes) -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>Happiness Horizon Travel</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="festivals.html">Festivals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            </div>
-        </div>
-    </nav>
+    <?php require_once 'includes/templates/header.html.php'; ?>
 
     <!-- Page Hero -->
     <!-- Replace the hero image: edit the data-hero attribute on the section below (e.g. data-hero="public/your-image.jpg") -->
@@ -38,7 +24,7 @@
         <div class="hero-content">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html">Home</a> / Festivals
+                    <a href="index.html.php">Home</a> / Festivals
                 </div>
                 <h1>Bhutan Festivals & Events</h1>
                 <p class="hero-subtitle">Experience the vibrant colors, sacred dances, and spiritual celebrations that bring Bhutan's culture to life</p>
@@ -239,7 +225,7 @@
                                 <li>Immerse yourself in the spirit of the Himalayas, where nature and culture flourish together.</li>
                             </ul>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -294,8 +280,8 @@
                 <h2>Experience Festivals with Our Special Tours</h2>
                 <p>Join us for specially curated tours timed with Bhutan's most spectacular festivals. Witness sacred dances, receive blessings, and immerse yourself in centuries-old traditions.</p>
                 <div class="cta-buttons">
-                    <a href="tours.html" class="btn btn-primary">View Festival Tours</a>
-                    <a href="contact.html" class="btn btn-secondary">Plan Your Visit</a>
+                    <a href="tours.html.php" class="btn btn-primary">View Festival Tours</a>
+                    <a href="contact.html.php" class="btn btn-secondary">Plan Your Visit</a>
                 </div>
             </div>
         </div>
@@ -346,52 +332,14 @@
             <div class="cta-box">
                 <h2>Ready to Experience Bhutan's Festivals?</h2>
                 <p>Let us help you plan your journey around these spectacular celebrations</p>
-                <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+                <a href="contact.html.php" class="btn btn-primary">Contact Us Today</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Happiness Horizon Travel</h3>
-                    <p>Where Every Journey Begins with Happiness</p>
-                    <p class="tagline">Tashi Delek!</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="tours.html">Tours</a></li>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="festivals.html">Festivals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#visa">Visa Information</a></li>
-                        <li><a href="#policy">Cancellation Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect With Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Happiness Horizon Travel. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <?php require_once 'includes/templates/footer.html.php'; ?>
+
 
     <script>
         function toggleMenu() {
@@ -400,7 +348,7 @@
         }
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -423,4 +371,5 @@
         });
     </script>
 </body>
+
 </html>

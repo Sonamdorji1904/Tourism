@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>Happiness Horizon Travel</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#festivals">Festivals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            </div>
-        </div>
-    </nav>
+    <?php require_once 'includes/templates/header.html.php'; ?>
+
 
     <!-- Page Hero -->
     <section class="page-hero contact-hero">
@@ -46,7 +33,7 @@
                 <div class="contact-form-section">
                     <h2>Send Us a Message</h2>
                     <p>Fill out the form below and we'll get back to you within 24 hours</p>
-                    
+
                     <form class="contact-form-detailed">
                         <div class="form-row">
                             <div class="form-group">
@@ -226,7 +213,7 @@
                     <h3>Can you customize tour itineraries?</h3>
                     <p>We specialize in creating personalized itineraries based on your interests, budget, and travel duration.</p>
                 </div>
-                
+
                 <div class="faq-item">
                     <h3>Do I need a visa to visit Bhutan?</h3>
                     <p>Yes, all tourists (except Indian, Bangladeshi, and Maldivian nationals) need a visa. We handle the visa process for you as part of our service.</p>
@@ -251,8 +238,8 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="index.html.php">Home</a></li>
+                        <li><a href="tours.html.php">Tours</a></li>
                         <li><a href="#destinations">Destinations</a></li>
                         <li><a href="#festivals">Festivals</a></li>
                     </ul>
@@ -260,8 +247,8 @@
                 <div class="footer-section">
                     <h4>Information</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html.php">About Us</a></li>
+                        <li><a href="contact.html.php">Contact</a></li>
                         <li><a href="https://immi.gov.bt/home/">Visa Information</a></li>
                         <li><a href="#policy">Cancellation Policy</a></li>
                     </ul>
@@ -297,4 +284,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>Happiness Horizon Travel</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#festivals">Festivals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            </div>
-        </div>
-    </nav>
+    <?php require_once 'includes/templates/header.html.php'; ?>
+
 
     <!-- Tour Detail Hero -->
     <section class="tour-detail-hero">
@@ -35,7 +22,7 @@
         <div class="tour-detail-hero-content">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html">Home</a> / <a href="tours.html">Tours</a> / Quick Bhutan Getaway
+                    <a href="index.html.php">Home</a> / <a href="tours.html.php">Tours</a> / Quick Bhutan Getaway
                 </div>
                 <h1>Quick Bhutan Getaway</h1>
                 <p class="tour-subtitle">Perfect introduction to the Land of Happiness</p>
@@ -76,7 +63,7 @@
 
                     <div class="tour-section">
                         <h2>Detailed Itinerary</h2>
-                        
+
                         <div class="itinerary-day">
                             <div class="day-header">
                                 <div class="day-number">Day 1</div>
@@ -166,8 +153,6 @@
                         </div>
                     </div>
 
-                    <p><strong>Note:</strong>This itinerary is provided as a general guide to give you an overview of the tour. The final itinerary can be customized to suit the season, your interests and preferred duration.</p>
-
                     <div class="tour-section">
                         <h2>What's Included</h2>
                         <div class="included-excluded">
@@ -238,16 +223,16 @@
                             </div>
 
                             <div class="form-group">
-                            <label for="meal">Meal Types</label>
-                            <select id="meal" name="meal">
-                                <option value="">Select a meal type (optional)</option>
-                                <option value="EP">European Plan (EP)</option>
-                                <option value="CP">Continental Plan (CP)</option>
-                                <option value="BP">Bermuda Plan (BP)</option>
-                                <option value="MAP">Modified American Plan (MAP)</option>
-                                <option value="AP">American Plan (AP)</option>
-                            </select>
-                        </div>
+                                <label for="meal">Meal Types</label>
+                                <select id="meal" name="meal">
+                                    <option value="">Select a meal type (optional)</option>
+                                    <option value="EP">European Plan (EP)</option>
+                                    <option value="CP">Continental Plan (CP)</option>
+                                    <option value="BP">Bermuda Plan (BP)</option>
+                                    <option value="MAP">Modified American Plan (MAP)</option>
+                                    <option value="AP">American Plan (AP)</option>
+                                </select>
+                            </div>
 
                             <button type="submit" class="btn btn-primary btn-full">Request Quote</button>
                         </form>
@@ -265,10 +250,10 @@
                             <strong>Duration:</strong>
                             <span>5 Days / 4 Nights</span>
                         </div>
-                        <!-- <div class="info-item">
+                        <div class="info-item">
                             <strong>Difficulty:</strong>
                             <span>Easy</span>
-                        </div> -->
+                        </div>
                         <div class="info-item">
                             <strong>Group Size:</strong>
                             <span>2-15 people</span>
@@ -341,46 +326,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Happiness Horizon Travel</h3>
-                    <p>Where Every Journey Begins with Happiness</p>
-                    <p class="tagline">Tashi Delek!</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="tours.html">Tours</a></li>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#festivals">Festivals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#visa">Visa Information</a></li>
-                        <li><a href="#policy">Cancellation Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect With Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Happiness Horizon Travel. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <?php require_once 'includes/templates/footer.html.php'; ?>
+
 
     <script>
         function toggleMenu() {
@@ -398,4 +345,5 @@
         });
     </script>
 </body>
+
 </html>

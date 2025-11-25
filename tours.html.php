@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -18,11 +20,11 @@
                     <h2>Happiness Horizon Travel</h2>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="index.html">Destinations</a></li>
-                    <li><a href="index.html">Festivals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html.php">Home</a></li>
+                    <li><a href="tours.html.php">Tours</a></li>
+                    <li><a href="index.html.php">Destinations</a></li>
+                    <li><a href="index.html.php">Festivals</a></li>
+                    <li><a href="contact.html.php">Contact</a></li>
                 </ul>
                 <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
             </div>
@@ -91,7 +93,7 @@
                         <h3>Quick Bhutan Getaway</h3>
                         <p class="tour-tagline">Perfect introduction to the Land of Happiness</p>
                         <p class="tour-description">The perfect package for travelers who wish to experience the essence of Bhutan in a short time. Check the iconic Tiger's Nest Monastery off your travel list while gaining a brief yet enriching glimpse into the country's natural beauty, unique culture, and way of life.</p>
-                        
+
                         <div class="tour-highlights-extended">
                             <h4>Tour Highlights</h4>
                             <ul>
@@ -108,7 +110,7 @@
 
                         <div class="tour-actions">
                             <a href="tour-detail.html" class="btn btn-primary">View Details</a>
-                            <a href="contact.html" class="btn btn-outline">Book Now</a>
+                            <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +126,7 @@
                         <h3>Taste of Happiness</h3>
                         <p class="tour-tagline">Immerse in Bhutan's rich culture and landscapes</p>
                         <p class="tour-description">This tour package is designed to immerse you in Bhutan's rich culture and breathtaking landscapes. Experience the natural beauty of Phobjikha and Gangtey Valleys, home to the rare black-necked cranes.</p>
-                        
+
                         <div class="tour-highlights-extended">
                             <h4>Tour Highlights</h4>
                             <ul>
@@ -141,7 +143,7 @@
 
                         <div class="tour-actions">
                             <a href="tour2.html" class="btn btn-primary">View Details</a>
-                            <a href="contact.html" class="btn btn-outline">Book Now</a>
+                            <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +159,7 @@
                         <h3>The Living Heritage</h3>
                         <p class="tour-tagline">Where ancient traditions meet natural beauty</p>
                         <p class="tour-description">Discover Bhutan, the Land of the Thunder Dragon through a journey that celebrates its living heritage, where ancient traditions blend seamlessly with the natural beauty of the Kingdom.</p>
-                        
+
                         <div class="tour-highlights-extended">
                             <h4>Tour Highlights</h4>
                             <ul>
@@ -174,7 +176,7 @@
 
                         <div class="tour-actions">
                             <a href="tour3.html" class="btn btn-primary">View Details</a>
-                            <a href="contact.html" class="btn btn-outline">Book Now</a>
+                            <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -190,7 +192,7 @@
                         <h3>Journey Through Culture</h3>
                         <p class="tour-tagline">Experience Bhutan's rich heritage and spirituality</p>
                         <p class="tour-description">Experience Bhutan's rich heritage, spirituality, and natural beauty through an immersive cultural journey. This tour blends history, culture, and nature for a true taste of Bhutanese life.</p>
-                        
+
                         <div class="tour-highlights-extended">
                             <h4>Tour Highlights</h4>
                             <ul>
@@ -207,7 +209,7 @@
 
                         <div class="tour-actions">
                             <a href="tour4.html" class="btn btn-primary">View Details</a>
-                            <a href="contact.html" class="btn btn-outline">Book Now</a>
+                            <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -223,7 +225,7 @@
                         <h3>Best of Bhutan Tours</h3>
                         <p class="tour-tagline">The ultimate Bhutan experience</p>
                         <p class="tour-description">Experience the best of Bhutan on this 9-day Cultural & Nature Tour. Trek to Tiger's Nest, explore Bumthang's spiritual heart, and immerse yourself in authentic Bhutanese culture.</p>
-                        
+
                         <div class="tour-highlights-extended">
                             <h4>Tour Highlights</h4>
                             <ul>
@@ -240,7 +242,7 @@
 
                         <div class="tour-actions">
                             <a href="tour5.html" class="btn btn-primary">View Details</a>
-                            <a href="contact.html" class="btn btn-outline">Book Now</a>
+                            <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +259,7 @@
                         <h3>Honeymoon: Two Hearts, One Kingdom</h3>
                         <p class="tour-tagline">Celebrate love in the mystical Kingdom of Bhutan</p>
                         <p class="tour-description">Celebrate your love in the most romantic setting—the mystical Kingdom of Bhutan. This special package is designed for couples seeking intimate moments amidst breathtaking landscapes.</p>
-                        
+
                         <div class="tour-highlights-extended">
                             <h4>Tour Highlights</h4>
                             <ul>
@@ -274,7 +276,7 @@
 
                         <div class="tour-actions">
                             <a href="tour6.html" class="btn btn-primary">View Details</a>
-                            <a href="contact.html" class="btn btn-outline">Book Now</a>
+                            <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -318,7 +320,7 @@
             <div class="cta-content">
                 <h2>Can't Find the Perfect Tour?</h2>
                 <p>We specialize in creating custom itineraries tailored to your interests, budget, and travel duration.</p>
-                <a href="contact.html" class="btn btn-primary">Request Custom Tour</a>
+                <a href="contact.html.php" class="btn btn-primary">Request Custom Tour</a>
             </div>
         </div>
     </section>
@@ -335,8 +337,8 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="index.html.php">Home</a></li>
+                        <li><a href="tours.html.php">Tours</a></li>
                         <li><a href="#destinations">Destinations</a></li>
                         <li><a href="#festivals">Festivals</a></li>
                     </ul>
@@ -344,8 +346,8 @@
                 <div class="footer-section">
                     <h4>Information</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html.php">About Us</a></li>
+                        <li><a href="contact.html.php">Contact</a></li>
                         <li><a href="#visa">Visa Information</a></li>
                         <li><a href="#policy">Cancellation Policy</a></li>
                     </ul>
@@ -381,4 +383,5 @@
         });
     </script>
 </body>
+
 </html>

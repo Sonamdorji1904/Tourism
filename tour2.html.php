@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>Happiness Horizon Travel</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#festivals">Festivals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            </div>
-        </div>
-    </nav>
+    <?php require_once 'includes/templates/header.html.php'; ?>
+
 
     <!-- Tour Detail Hero -->
     <section class="tour-detail-hero">
@@ -35,7 +22,7 @@
         <div class="tour-detail-hero-content">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html">Home</a> / <a href="tours.html">Tours</a> / Taste of Happiness
+                    <a href="index.html.php">Home</a> / <a href="tours.html.php">Tours</a> / Taste of Happiness
                 </div>
                 <h1>Taste of Happiness</h1>
                 <p class="tour-subtitle">Experience the essence of Bhutan in 6 unforgettable Days</p>
@@ -59,7 +46,7 @@
                     <div class="tour-section">
                         <h2>Tour Overview</h2>
                         <p class="lead">This tour package is designed to immerse you in Bhutan’s rich culture and breathtaking landscapes, allowing you to truly experience the Taste of Happiness. Begin your journey in Thimphu, explore the historic sites of Punakha, experience the natural beauty of Phobjikha and Gangtey Valleys, and admire the majestic Wangduephodrang Dzong. Your adventure culminates with a memorable hike to the iconic Paro Taktshang (Tiger’s Nest Monastery). With expert guides and authentic experiences, this package offers a truly immersive cultural journey through the Land of Happiness.</p>
-                        
+
                     </div>
 
                     <div class="tour-section">
@@ -75,7 +62,7 @@
 
                     <div class="tour-section">
                         <h2>Detailed Itinerary</h2>
-                        
+
                         <div class="itinerary-day">
                             <div class="day-header">
                                 <div class="day-number">Day 1</div>
@@ -152,7 +139,7 @@
                                 <p><strong>Activities:</strong></p>
                                 <ul>
                                     <li><strong>Scenic Stop at Pelela Pass:</strong>
-                                    En route, pause at Pelela Pass, one of Bhutan’s high mountain passes, to enjoy panoramic views of the Himalayas. Take a moment to interact with local vendors selling handmade crafts and regional treats.
+                                        En route, pause at Pelela Pass, one of Bhutan’s high mountain passes, to enjoy panoramic views of the Himalayas. Take a moment to interact with local vendors selling handmade crafts and regional treats.
                                     </li>
                                     <li>Visit Wangdue Phodrang Dzong</li>
                                     <li>Arrival in Paro</li>
@@ -175,7 +162,7 @@
                                     <li>Hike to Taktsang Monastery (3 -4 hours hours round trip)</li>
                                     <li>Stop at the <strong>Taktsang Cafeteria</strong>, where you can rest, enjoy tea or snacks, and take in a stunning view of the monastery clinging to the cliffs.</li>
                                     <li><strong>Lunch in Paro:</strong>
-                                    After descending, return to Paro town and enjoy a sumptuous local lunch at a nearby restaurant.
+                                        After descending, return to Paro town and enjoy a sumptuous local lunch at a nearby restaurant.
                                     </li>
                                     <li>Explore Paro town</li>
                                     <li>Evening at a Traditional Farmhouse</li>
@@ -267,16 +254,16 @@
                             </div>
 
                             <div class="form-group">
-                            <label for="meal">Meal Types</label>
-                            <select id="meal" name="meal">
-                                <option value="">Select a meal type (optional)</option>
-                                <option value="EP">European Plan (EP)</option>
-                                <option value="CP">Continental Plan (CP)</option>
-                                <option value="BP">Bermuda Plan (BP)</option>
-                                <option value="MAP">Modified American Plan (MAP)</option>
-                                <option value="AP">American Plan (AP)</option>
-                            </select>
-                        </div>
+                                <label for="meal">Meal Types</label>
+                                <select id="meal" name="meal">
+                                    <option value="">Select a meal type (optional)</option>
+                                    <option value="EP">European Plan (EP)</option>
+                                    <option value="CP">Continental Plan (CP)</option>
+                                    <option value="BP">Bermuda Plan (BP)</option>
+                                    <option value="MAP">Modified American Plan (MAP)</option>
+                                    <option value="AP">American Plan (AP)</option>
+                                </select>
+                            </div>
 
                             <button type="submit" class="btn btn-primary btn-full">Request Quote</button>
                         </form>
@@ -370,46 +357,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Happiness Horizon Travel</h3>
-                    <p>Where Every Journey Begins with Happiness</p>
-                    <p class="tagline">Tashi Delek!</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="tours.html">Tours</a></li>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#festivals">Festivals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#visa">Visa Information</a></li>
-                        <li><a href="#policy">Cancellation Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect With Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Happiness Horizon Travel. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <?php require_once 'includes/templates/footer.html.php'; ?>
+
 
     <script>
         function toggleMenu() {
@@ -427,4 +376,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>Happiness Horizon Travel</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#festivals">Festivals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            </div>
-        </div>
-    </nav>
+    <?php require_once 'includes/templates/header.html.php'; ?>
+
 
     <!-- Tour Detail Hero -->
     <section class="tour-detail-hero">
@@ -35,13 +22,13 @@
         <div class="tour-detail-hero-content">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html">Home</a> / <a href="tours.html">Tours</a> / The Living Heritage
+                    <a href="index.html.php">Home</a> / <a href="tours.html.php">Tours</a> / Journey Through Culture
                 </div>
-                <h1>The Living Heritage</h1>
-                <p class="tour-subtitle">Experience the rich cultural tapestry of Bhutan</p>
+                <h1>Journey Through Culture</h1>
+                <p class="tour-subtitle">Immerse yourself in the rich cultural heritage of Bhutan</p>
                 <div class="tour-quick-info">
                     <div class="quick-info-item">
-                        <strong>Duration:</strong> 7 Days / 6 Nights
+                        <strong>Duration:</strong> 8 Days / 7 Nights
                     </div>
                     <div class="quick-info-item">
                         <strong>Best Time:</strong> March - May, Sept - Nov
@@ -58,27 +45,26 @@
                 <div class="tour-main-content">
                     <div class="tour-section">
                         <h2>Tour Overview</h2>
-                        <p>Discover Bhutan, the Land of the Thunder Dragon through a journey that celebrates its living heritage, where ancient traditions blend seamlessly with the natural beauty of the Kingdom of Bhutan.</p>
-                        <p>This week-long adventure offers an immersive experience into Bhutan’s vibrant culture, spirituality, and pristine landscapes a true reflection of the nation’s enduring heritage and unique way of life.</p>
+                        <p class="lead">Experience Bhutan’s rich heritage, spirituality, and natural beauty:</p>
+                        <p>Your journey begins in Thimphu, Bhutan's charming capital city, where you will visit some of the most significant historical, cultural, and spiritual landmarks. The highlight of the getaway is a scenic hike to the Tiger's Nest (Paro Taktsang), Bhutan's most famous and awe-inspiring attraction, dramatically perched on a cliffside.</p>
                     </div>
 
                     <div class="tour-section">
                         <h2>Tour Highlights</h2>
                         <ul class="highlights-list">
-                            <li>Discover Bhutan’s living heritage, where ancient traditions meet natural beauty and spiritual harmony.</li>
-                            <li>Explore Thimphu, the vibrant capital blending culture and modernity through its monasteries, museums, and local markets.</li>
-                            <li>Visit the magnificent Punakha Dzong</li>
-                            <li>Experience the tranquility of Phobjikha Valley, winter home of the rare black-necked cranes</li>
-                            <li>Embark on the iconic hike to Tiger’s Nest Monastery (Taktsang) in Paro</li>
-                            <li>Immerse yourself in Paro’s rich heritage, ancient temples, and traditional Bhutanese charm.</li>
-                            <li>Enjoy scenic drives through mountain passes, including Dochula Pass, with its 108 chortens and Druk Wangyel Lhakhang.</li>
-                            <li>Savor authentic Bhutanese cuisine and experience local hospitality with options like a traditional hot stone bath and farmhouse dinner.</li>
+                            <li>Visit Buddha Dordenma, Tashichho Dzong, National Memorial Chorten, Folk Heritage Museum, National Textile Museum, and local crafts markets</li>
+                            <li>Try traditional Bhutanese attire, participate in butter lamp lighting, and interact with local artisans</li>
+                            <li>Explore the majestic Punakha Dzong and hike to the beautiful hilltop Khamsum Yulley Namgyal Chorten for stunning valley views</li>
+                            <li>Visit Gangtey Monastery and the serene Phobjikha Valley</li>
+                            <li>Explore Rinpung Dzong, National Museum, Nyamed Zam, and hike to the iconic Taktsang Monastery (Tiger’s Nest) perched on a cliff</li>
+                            <li>Enjoy breathtaking views at Chelela Pass and Pelela Pass</li>
+                            <li>Stay in hotels or farmhouses, savor traditional cuisine, and experience local hospitality</li>
                         </ul>
                     </div>
 
                     <div class="tour-section">
                         <h2>Detailed Itinerary</h2>
-                        
+
                         <div class="itinerary-day">
                             <div class="day-header">
                                 <div class="day-number">Day 1</div>
@@ -91,8 +77,7 @@
                                     <li>Visit National Memorial Chorten</li>
                                     <li>Explore Kaja Throm (Farmers' Market)</li>
                                     <li>Visit Changyul Park</li>
-                                    <li>Visit Tashichhoe Dzong</li>
-                                    <li>Leisurely stroll around Thimphu town in the evening</li>
+                                    <li>Evening stroll around Thimphu town</li>
                                 </ul>
                                 <p><strong>Accommodation:</strong> Hotel in Thimphu</p>
                             </div>
@@ -107,12 +92,12 @@
                                 <p>Spend the day discovering Thimphu, Bhutan’s vibrant capital city, where ancient traditions harmoniously coexist with modern lifestyle.</p>
                                 <p><strong>Activities:</strong></p>
                                 <ul>
-                                    <li>Visit Kuenselphodrang (Buddha Point)</li>
+                                    <li>Visit Buddha Dordenma</li>
                                     <li>Explore Folk Heritage Museum & National Textile Museum</li>
-                                    <li>Institute for Zorig Chusum (School of Arts & Crafts)</li>
-                                    <li>Visit Takin Preserve</li>
-                                    <li>Explore Crafts Market & Clock Tower Square</li>
+                                    <li>Visit Institute for Zorig Chusum (School of Arts & Crafts)</li>
+                                    <li>Takin Preserve</li>
                                     <li>Visit Changangkha Lhakhang</li>
+                                    <li>Explore Crafts Market & Clock Tower Square</li>
                                 </ul>
                             </div>
                         </div>
@@ -120,49 +105,45 @@
                         <div class="itinerary-day">
                             <div class="day-header">
                                 <div class="day-number">Day 3</div>
-                                <h3>Drive to Gangtey and Phobjikha Valley(Approx. 5–6 hours’ drive)</h3>
+                                <h3>Drive to Punakha via Dochula Pass (Approx. 2.5 hours)</h3>
                             </div>
                             <div class="day-content">
-                                <p>After breakfast depart from Thimphu for a scenic drive to Gangtey and Phobjikha Valley. Enjoy winding mountain roads, lush forests, and traditional villages with photo stops along the way.</p>
+                                <p>On your third day you will enjoy a scenic 2.5-hour drive to Punakha, passing through the stunning Dochula Pass. Here, you’ll see 108 chortens (stupas) and the beautiful Druk Wangyel Temple, built by the Queen Mother, Ashi Dorji Wangmo Wangchuck, to commemorate Bhutan’s victory over Indian militants and honor the souls of the fallen.</p>
                                 <p><strong>Activities:</strong></p>
                                 <ul>
-                                    <li><strong>Arrive Gangtey:</strong>
-                                    Visit Gangtey Monastery (Gangtey Gonpa), a 17th-century spiritual center perched above the valley, offering panoramic views and a serene atmosphere
-                                    </li>
-                                    <li>Visit <strong>Phobjikha Valley</strong>: known for its pristine meadows, traditional farmhouses, and as the winter home of the rare black-necked cranes</li>
-                                    <li>Overnight in Gangtey:
-                                    Check in to a comfortable hotel or a cozy farmhouse, and enjoy a warm dinner while experiencing authentic Bhutanese hospitality and countryside life.
-                                    </li>
+                                    <li><strong>Druk Wangyal Lhakhang:</strong> A modern monastery built by Ashi Dorji Wangmo Wangchuck, the Queen Mother of Bhutan, as a tribute to the Fourth King, Jigme Singye Wangchuck, and the armed forces.</li>
+                                    <li>Visit Chhimi Lhakhang (Temple of Fertility)</li>
+                                    <li>Explore Woolakha Nunnery</li>
+                                    <li>Visit Punakha Dzong</li>
+                                    <li>Overnight in Punakha</li>
                                 </ul>
+                                <p><strong>Accommodation:</strong> Hotel in Punakha</p>
                             </div>
                         </div>
 
                         <div class="itinerary-day">
                             <div class="day-header">
                                 <div class="day-number">Day 4</div>
-                                <h3>Drive from Gangtey to Punakha (Approx. 5–6 hours)</h3>
+                                <h3>Punakha – Short Hike & Local Sightseeing</h3>
                             </div>
                             <div class="day-content">
-                                <p>After breakfast in Gangtey, begin your scenic drive towards Punakha, passing through forests, villages, and winding mountain roads with panoramic Himalayan views.</p>
+                                <p>After breakfast, embark on a 45-minute hike to Khamsum Yulley Namgyel Chorten, a hilltop chorten built by Her Majesty the Queen Mother, Ashi Tshering Yangdon Wangchuck. Enjoy stunning views of Punakha Valley and lush paddy fields along the way. Visit Choeten Nyingpo Goenzin Dratshang to experience the monastic life of Bhutanese monks.</p>
                                 <p><strong>Activities:</strong></p>
                                 <ul>
-                                    <li><strong>Scenic Stop at Pelela Pass:</strong>
-                                    one of Bhutan’s high mountain passes.
-                                    </li>
-                                    <li><strong>Lunch in Wangdue:</strong>
-                                    Stop for lunch in Wangdue Phodrang, the town famous for its historical dzong and picturesque landscapes
-                                    </li>
-                                    <li>Visit Wangdue Phodrang Dzong</li>
-                                    <li>Visit Chhimi Lhakhang (Temple of Fertility)</li>
-                                    <li>Explore Woolakha Nunnery</li>
-                                    <li>Visit Punakha Dzong</li>
-                                    <li>Overnight in Punakha</li>
-                                </ul>
-                                <p><strong>Optional Activities in Punakha:</strong></p>
-                                <ul>
-                                    <li>Stroll through the local farmers’ market to experience village life</li>
-                                    <li>Walk across Bhutan’s longest suspension bridge for scenic river valley views</li>
-                                    <li>River rafting on Pho Chhu or Mo Chhu rivers (optional)</li>
+                                    <li>Local Exploration in Punakha</li>
+                                    <ul>
+                                        <li>Stroll through the local farmers’ market</li>
+                                        <li>Walk across Bhutan’s longest suspension bridge for breathtaking valley views</li>
+                                        <li>Explore Mendagang Village and Khuruthang Town & local market to see local culture, crafts, and traditions</li>
+                                        <li><strong>Optional:</strong> River rafting on the Pho Chhu or Mo Chhu rivers for adventure enthusiasts</li>
+                                    </ul>
+                                    <li>Drive to Lobesa</li>
+                                    <ul>
+                                        <li>After your Punakha sightseeing, drive approximately 20 minutes to Lobesa for an overnight stay.</li>
+                                        <li>Explore Lobesa Village, a quaint settlement showcasing traditional Bhutanese rural life.</li>
+                                        <li>Stroll through the small town along the highway, interact with locals, and discover local shops and handicrafts.</li>
+                                        <li>Overnight stay at a hotel in Lobesa. </li>
+                                    </ul>
                                 </ul>
                             </div>
                         </div>
@@ -170,59 +151,75 @@
                         <div class="itinerary-day">
                             <div class="day-header">
                                 <div class="day-number">Day 5</div>
-                                <h3>Drive from Punakha to Paro (Approx. 4–5 hours including stops)</h3>
+                                <h3>Drive to Gangtey & Phobjikha </h3>
                             </div>
                             <div class="day-content">
-                                <p>After breakfast in Punakha, begin the scenic drive towards Paro, passing through lush valleys, forests, and winding mountain roads.</p>
+                                <p>After breakfast depart from Lobesa for a scenic drive to Gangtey and Phobjikha Valley. Enjoy winding mountain roads, lush forests, and traditional villages with photo stops along the way.</p>
                                 <p><strong>Activities:</strong></p>
                                 <ul>
-                                    <li><strong>Scenic Stop at Chelela Pass:</strong> 
-                                    the highest motorable pass in Bhutan, offering panoramic views of the Himalayan peaks and pristine landscapes.
-                                    </li>
-                                    <li>Paro Sightseeing</li>
-                                    <li>Visit National Museum (Ta Dzong)</li>
-                                    <li>Rinpung Dzong</li>
-                                    <li>Nyamed Zam</li>
-                                    <li>Lunch – Farmhouse Experience</li>
-                                    <li><strong>Cultural Experiences:</strong>
-                                    Participate in Bhutanese archery, the national sport, and try your hand at Khuru (dart game) alongside locals for a fun cultural immersion
+                                    <li>Visit <strong>Gangtey Monastery (Gangtey Gonpa)</strong>: a 17th-century spiritual center perched above the valley, offering panoramic views and a serene atmosphere.</li>
+                                    <li>Explore <strong>Phobjikha Valley:</strong> known for its pristine meadows, traditional farmhouses, and as the winter home of the rare black-necked cranes.</li>
+                                    <ul>
+                                        <li>Stroll along the Gangtey Nature Trail towards the and enjoy sunset views of the valley. Immerse yourself in the calm and spiritual energy of this untouched haven.</li>
+                                    </ul>
+                                    <li><strong>Overnight in Gangtey:</strong>
+                                        Check in to a comfortable hotel or a cozy farmhouse, and enjoy a warm dinner while experiencing authentic Bhutanese hospitality and countryside life.
                                     </li>
                                 </ul>
                             </div>
                         </div>
-
                         <div class="itinerary-day">
                             <div class="day-header">
                                 <div class="day-number">Day 6</div>
+                                <h3>Drive to Paro </h3>
+                            </div>
+                            <div class="day-content">
+                                <p><strong>Morning:</strong></p>
+                                <ul>
+                                    <li>Breakfast at hotel/farmhouse in Gangtey.</li>
+                                    <li>Departure towards Paro with scenic drives through forests, villages, and mountain roads.</li>
+                                </ul>
+
+                                <p><strong>Enroute sightseeing :</strong></p>
+                                <ul>
+                                    <li><strong>Pelela Pass:</strong> Stop at this high mountain pass for panoramic views of the majestic mountains and interact with local vendors.</li>
+                                    <li><strong>Wangdue Phodrang Dzong:</strong> Explore this historic fortress overlooking the confluence of the Punakha and Dang Chu rivers.</li>
+                                    <li>Lunch at Lobesa</li>
+                                    <li><strong>Tamchog Lhakhang & Iron Chain Bridge:</strong> Cross this 13th-century suspension bridge built by Tibetan saint Thangthong Gyalpo and experience the thrill of walking over one of Bhutan’s few remaining functional iron chain bridges.</li>
+                                    <li>Paro International Airport – Bird’s Eye View</li>
+                                    <li>National Museum (Ta Dzong)</li>
+                                    <li>Overnight in Paro</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="itinerary-day">
+                            <div class="day-header">
+                                <div class="day-number">Day 7</div>
                                 <h3>Hike to Taktsang Monastery</h3>
                             </div>
                             <div class="day-content">
                                 <p>Embark on a memorable hike to the sacred Taktsang Monastery, perched on a cliff above the Paro Valley. The trail winds through pine forests adorned with colorful prayer flags and offers breathtaking views at every turn.</p>
+                                <p>The hike usually takes 3 -4 hours hours round trip, depending on your pace. About halfway up, stop at the Taktsang Cafeteria, where you can rest, enjoy tea or snacks, and take in a stunning view of the monastery clinging to the cliffs.</p>
                                 <p><strong>Activities:</strong></p>
                                 <ul>
-                                    <li><strong>Explore the Monastery:</strong>
-                                    Upon reaching the monastery, immerse yourself in its serene atmosphere and spiritual energy. Taktsang is one of Bhutan’s most revered pilgrimage sites, believed to be where Guru Padmasambhava (Guru Rinpoche), the saint who introduced Buddhism to Bhutan, arrived on the back of a flying tigress and meditated in a cave.
-                                    </li>
+                                    <li>Explore the Monastery</li>
                                     <li>Lunch in Paro</li>
                                     <li>Afternoon Visit to Kyichu Lhakhang</li>
-                                    <li>Explore Paro Town</li>
+                                    <li>Explore Paro town</li>
+                                    <li>Overnight in Paro</li>
                                 </ul>
-                                <p class="farewell">Tashi Delek! May the blessings of Bhutan accompany you wherever you go.</p>
                             </div>
                         </div>
-
                         <div class="itinerary-day">
                             <div class="day-header">
-                                <div class="day-number">Day 7</div>
+                                <div class="day-number">Day 8</div>
                                 <h3>Departure from Paro or Drive to Phuentsholing for Land Exit</h3>
                             </div>
                             <div class="day-content">
                                 <p>We will bid a fond farewell to the enchanting Kingdom of Bhutan. After an early breakfast, we will either drop to Paro International Airport for your onward flight home or to your next destination, or we will drive to Phuentsholing to exit Bhutan via the land border.</p>
-                                <p>We hope your journey has been filled with new friendships, unforgettable experiences, and countless beautiful memories of this Himalayan paradise. May the blessings of Bhutan accompany you wherever you go.</p>
-                                <p class="farewell">Tashi Delek! May the blessings of Bhutan accompany you wherever you go.</p>
+                                <p class="farewell">Tashi Delek! We look forward to welcoming you back to this land of timeless beauty and endless enchantment.</p>
                             </div>
                         </div>
-
                     </div>
                     <p><strong>Note:</strong>This itinerary is provided as a general guide to give you an overview of the tour. The final itinerary can be customized to suit the season, your interests and preferred duration.</p>
 
@@ -296,16 +293,16 @@
                             </div>
 
                             <div class="form-group">
-                            <label for="meal">Meal Types</label>
-                            <select id="meal" name="meal">
-                                <option value="">Select a meal type (optional)</option>
-                                <option value="EP">European Plan (EP)</option>
-                                <option value="CP">Continental Plan (CP)</option>
-                                <option value="BP">Bermuda Plan (BP)</option>
-                                <option value="MAP">Modified American Plan (MAP)</option>
-                                <option value="AP">American Plan (AP)</option>
-                            </select>
-                        </div>
+                                <label for="meal">Meal Types</label>
+                                <select id="meal" name="meal">
+                                    <option value="">Select a meal type (optional)</option>
+                                    <option value="EP">European Plan (EP)</option>
+                                    <option value="CP">Continental Plan (CP)</option>
+                                    <option value="BP">Bermuda Plan (BP)</option>
+                                    <option value="MAP">Modified American Plan (MAP)</option>
+                                    <option value="AP">American Plan (AP)</option>
+                                </select>
+                            </div>
 
                             <button type="submit" class="btn btn-primary btn-full">Request Quote</button>
                         </form>
@@ -321,7 +318,7 @@
                         <h4>Tour Information</h4>
                         <div class="info-item">
                             <strong>Duration:</strong>
-                            <span>7 Days / 6 Nights</span>
+                            <span>8 Days / 7 Nights</span>
                         </div>
                         <!-- <div class="info-item">
                             <strong>Difficulty:</strong>
@@ -367,7 +364,7 @@
                     <div class="tour-content">
                         <h3>Taste of Happiness</h3>
                         <p>Immerse yourself in Bhutan's rich culture and breathtaking landscapes.</p>
-                        <a href="tour-detail.html" class="btn btn-outline">View Details</a>
+                        <a href="tour2.html" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
 
@@ -379,7 +376,7 @@
                     <div class="tour-content">
                         <h3>The Living Heritage</h3>
                         <p>Discover Bhutan's living heritage where ancient traditions meet natural beauty.</p>
-                        <a href="tour-detail.html" class="btn btn-outline">View Details</a>
+                        <a href="tour3.html" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
 
@@ -391,7 +388,7 @@
                     <div class="tour-content">
                         <h3>Honeymoon Package</h3>
                         <p>Celebrate your love in the mystical Kingdom of Bhutan.</p>
-                        <a href="tour-detail.html" class="btn btn-outline">View Details</a>
+                        <a href="tour6.html" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
             </div>
@@ -399,46 +396,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Happiness Horizon Travel</h3>
-                    <p>Where Every Journey Begins with Happiness</p>
-                    <p class="tagline">Tashi Delek!</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="tours.html">Tours</a></li>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#festivals">Festivals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#visa">Visa Information</a></li>
-                        <li><a href="#policy">Cancellation Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect With Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Happiness Horizon Travel. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <?php require_once 'includes/templates/footer.html.php'; ?>
+
 
     <script>
         function toggleMenu() {
@@ -456,4 +415,5 @@
         });
     </script>
 </body>
+
 </html>

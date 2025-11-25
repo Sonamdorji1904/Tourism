@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,22 @@
     <link rel="stylesheet" href="Css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>Happiness Horizon Travel</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#tours">Tours</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#festivals">Festivals</a></li>
-                    <li><a href="#experiences">Treks</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            </div>
-        </div>
-    </nav>
+    <?php require_once 'includes/templates/header.html.php'; ?>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">Where Every Journey Begins with Happiness</h1>
-            <p class="hero-subtitle">Discover the authentic spirit of Bhutan through immersive cultural experiences, sacred monasteries, and breathtaking Himalayan landscapes</p>
+            <p class="hero-subtitle">Discover the authentic spirit of Bhutan through immersive cultural experiences,
+                sacred monasteries, and breathtaking Himalayan landscapes</p>
             <div class="hero-buttons">
                 <a href="#tours" class="btn btn-primary">Explore Our Tours</a>
                 <a href="#contact" class="btn btn-secondary">Plan Your Journey</a>
@@ -49,8 +37,13 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>Welcome to the Land of Happiness</h2>
-                    <p>Founded with the vision of spreading happiness beyond borders, Happiness Horizon Travel is dedicated to sharing the true essence of Bhutan—its breathtaking landscapes, vibrant culture, and heartfelt spirit with travelers from around the world.</p>
-                    <p>We design authentic, responsible, and unforgettable travel experiences that celebrate Bhutan's natural beauty and rich cultural heritage. From spiritual visits to sacred monasteries and breathtaking hikes through untouched valleys to immersive cultural encounters, every journey is crafted to reveal the soul of the Land of the Thunder Dragon.</p>
+                    <p>Founded with the vision of spreading happiness beyond borders, Happiness Horizon Travel is
+                        dedicated to sharing the true essence of Bhutan—its breathtaking landscapes, vibrant culture,
+                        and heartfelt spirit with travelers from around the world.</p>
+                    <p>We design authentic, responsible, and unforgettable travel experiences that celebrate Bhutan's
+                        natural beauty and rich cultural heritage. From spiritual visits to sacred monasteries and
+                        breathtaking hikes through untouched valleys to immersive cultural encounters, every journey is
+                        crafted to reveal the soul of the Land of the Thunder Dragon.</p>
                 </div>
                 <div class="about-features">
                     <div class="feature-card">
@@ -83,7 +76,8 @@
         <div class="container">
             <div class="section-header">
                 <h2>Tours for Every Dream</h2>
-                <p>Choose from our carefully curated tour packages, each designed to offer a unique perspective of Bhutan's beauty and culture</p>
+                <p>Choose from our carefully curated tour packages, each designed to offer a unique perspective of
+                    Bhutan's beauty and culture</p>
             </div>
             <div class="tours-grid">
                 <div class="tour-card">
@@ -93,7 +87,8 @@
                     </div>
                     <div class="tour-content">
                         <h3>Quick Bhutan Getaway</h3>
-                        <p>Perfect for travelers who want to experience the essence of Bhutan in a short time, including the iconic Tiger's Nest Monastery.</p>
+                        <p>Perfect for travelers who want to experience the essence of Bhutan in a short time, including
+                            the iconic Tiger's Nest Monastery.</p>
                         <ul class="tour-highlights">
                             <li>Thimphu, Punakha, Paro</li>
                             <li>Tiger's Nest hike</li>
@@ -110,7 +105,8 @@
                     </div>
                     <div class="tour-content">
                         <h3>Taste of Happiness</h3>
-                        <p>Immerse yourself in Bhutan's rich culture and breathtaking landscapes, including the serene Phobjikha Valley.</p>
+                        <p>Immerse yourself in Bhutan's rich culture and breathtaking landscapes, including the serene
+                            Phobjikha Valley.</p>
                         <ul class="tour-highlights">
                             <li>Gangtey & Phobjikha Valley</li>
                             <li>Black-necked cranes</li>
@@ -127,7 +123,8 @@
                     </div>
                     <div class="tour-content">
                         <h3>The Living Heritage</h3>
-                        <p>Discover Bhutan's living heritage where ancient traditions blend seamlessly with natural beauty.</p>
+                        <p>Discover Bhutan's living heritage where ancient traditions blend seamlessly with natural
+                            beauty.</p>
                         <ul class="tour-highlights">
                             <li>Complete cultural journey</li>
                             <li>Multiple valleys</li>
@@ -144,7 +141,8 @@
                     </div>
                     <div class="tour-content">
                         <h3>Journey Through Culture</h3>
-                        <p>Experience Bhutan's rich heritage, spirituality, and natural beauty through an immersive cultural journey.</p>
+                        <p>Experience Bhutan's rich heritage, spirituality, and natural beauty through an immersive
+                            cultural journey.</p>
                         <ul class="tour-highlights">
                             <li>Extended exploration</li>
                             <li>Cultural landmarks</li>
@@ -161,7 +159,8 @@
                     </div>
                     <div class="tour-content">
                         <h3>Best of Bhutan Tours</h3>
-                        <p>The ultimate Bhutan experience including Bumthang, the spiritual heart of Bhutan with ancient monasteries.</p>
+                        <p>The ultimate Bhutan experience including Bumthang, the spiritual heart of Bhutan with ancient
+                            monasteries.</p>
                         <ul class="tour-highlights">
                             <li>Complete Bhutan tour</li>
                             <li>Bumthang Valley</li>
@@ -253,32 +252,39 @@
                 <p>Witness colorful celebrations that bring Bhutan's culture and spirituality to life</p>
             </div>
             <div class="festivals-grid">
-                <a href="festivals.html" class="festival-card festival-link" role="link" aria-label="Paro Tshechu - Festivals" title="Paro Tshechu">
+                <a href="festivals.html.php" class="festival-card festival-link" role="link"
+                    aria-label="Paro Tshechu - Festivals" title="Paro Tshechu">
                     <h3>Paro Tshechu</h3>
                     <p class="festival-time">Spring</p>
-                    <p>Bhutan's most iconic religious festival featuring sacred mask dances and the unfurling of the giant Thongdrel.</p>
+                    <p>Bhutan's most iconic religious festival featuring sacred mask dances and the unfurling of the
+                        giant Thongdrel.</p>
                 </a>
-                <a href="festivals.html" class="festival-card festival-link" role="link" aria-label="Thimphu Tshechu - Festivals" title="Thimphu Tshechu">
+                <a href="festivals.html.php" class="festival-card festival-link" role="link"
+                    aria-label="Thimphu Tshechu - Festivals" title="Thimphu Tshechu">
                     <h3>Thimphu Tshechu</h3>
                     <p class="festival-time">September/October</p>
                     <p>One of Bhutan's largest festivals held at the magnificent Tashichho Dzong in the capital.</p>
                 </a>
-                <a href="festivals.html" class="festival-card festival-link" role="link" aria-label="Black-Necked Crane Festival - Festivals" title="Black-Necked Crane Festival">
+                <a href="festivals.html.php" class="festival-card festival-link" role="link"
+                    aria-label="Black-Necked Crane Festival - Festivals" title="Black-Necked Crane Festival">
                     <h3>Black-Necked Crane Festival</h3>
                     <p class="festival-time">November</p>
                     <p>Celebrate the arrival of endangered cranes in the beautiful Phobjikha Valley.</p>
                 </a>
-                <a href="festivals.html" class="festival-card festival-link" role="link" aria-label="Punakha Domchoe - Festivals" title="Punakha Domchoe">
+                <a href="festivals.html.php" class="festival-card festival-link" role="link"
+                    aria-label="Punakha Domchoe - Festivals" title="Punakha Domchoe">
                     <h3>Punakha Domchoe</h3>
                     <p class="festival-time">February/March</p>
                     <p>Spectacular martial performances and sacred rituals at Punakha Dzong.</p>
                 </a>
-                <a href="festivals.html" class="festival-card festival-link" role="link" aria-label="Jomolhari Mountain Festival - Festivals" title="Jomolhari Mountain Festival">
+                <a href="festivals.html.php" class="festival-card festival-link" role="link"
+                    aria-label="Jomolhari Mountain Festival - Festivals" title="Jomolhari Mountain Festival">
                     <h3>Jomolhari Mountain Festival</h3>
                     <p class="festival-time">October</p>
                     <p>Highland celebration honoring the coexistence of people and snow leopards.</p>
                 </a>
-                <a href="festivals.html" class="festival-card festival-link" role="link" aria-label="Royal Highland Festival - Festivals" title="Royal Highland Festival">
+                <a href="festivals.html.php" class="festival-card festival-link" role="link"
+                    aria-label="Royal Highland Festival - Festivals" title="Royal Highland Festival">
                     <h3>Royal Highland Festival</h3>
                     <p class="festival-time">Seasonal</p>
                     <p>Experience the unique culture of Bhutan's highland communities in remote Laya.</p>
@@ -293,7 +299,9 @@
             <div class="why-choose-content">
                 <div class="why-choose-text">
                     <h2>Why Choose Happiness Horizon Travel</h2>
-                    <p class="lead">At Happiness Horizon Travel, we believe every journey should touch the heart and inspire the soul through the authentic values of Bhutan. When you travel with us, you don't just visit Bhutan—you truly experience it.</p>
+                    <p class="lead">At Happiness Horizon Travel, we believe every journey should touch the heart and
+                        inspire the soul through the authentic values of Bhutan. When you travel with us, you don't just
+                        visit Bhutan—you truly experience it.</p>
                     <div class="benefits-list">
                         <div class="benefit-item">
                             <div class="benefit-icon">✓</div>
@@ -338,7 +346,8 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h2>Start Your Journey to Happiness</h2>
-                    <p>Let us take you beyond the ordinary to the horizon where happiness begins and memories last a lifetime.</p>
+                    <p>Let us take you beyond the ordinary to the horizon where happiness begins and memories last a
+                        lifetime.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <strong>Email:</strong>
@@ -414,46 +423,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Happiness Horizon Travel</h3>
-                    <p>Where Every Journey Begins with Happiness</p>
-                    <p class="tagline">Tashi Delek!</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#tours">Tours</a></li>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#festivals">Festivals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#visa">Visa Information</a></li>
-                        <li><a href="#policy">Cancellation Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect With Us</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/1Cf6CmHeWk/?mibextid=wwXIfr" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Happiness Horizon Travel. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <?php require_once 'includes/templates/footer.html.php'; ?>
+
 
     <script>
         function toggleMenu() {
@@ -463,7 +434,7 @@
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -488,4 +459,5 @@
         });
     </script>
 </body>
+
 </html>
