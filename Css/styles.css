@@ -1202,7 +1202,7 @@ img {
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--spacing-lg);
 }
 
@@ -1220,7 +1220,7 @@ img {
 
 .contact-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: var(--spacing-sm);
 }
 
