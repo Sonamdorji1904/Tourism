@@ -94,7 +94,7 @@
                             <li>Tiger's Nest hike</li>
                             <li>Cultural landmarks</li>
                         </ul>
-                        <a href="tour-detail.html" class="btn btn-outline">Learn More</a>
+                        <a href="tour-detail.html.php" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
                             <li>Black-necked cranes</li>
                             <li>Cultural immersion</li>
                         </ul>
-                        <a href="tour2.html" class="btn btn-outline">Learn More</a>
+                        <a href="tour2.html.php" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
 
@@ -130,7 +130,7 @@
                             <li>Multiple valleys</li>
                             <li>Spiritual experiences</li>
                         </ul>
-                        <a href="tour3.html" class="btn btn-outline">Learn More</a>
+                        <a href="tour3.html.php" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
 
@@ -148,7 +148,7 @@
                             <li>Cultural landmarks</li>
                             <li>Traditional experiences</li>
                         </ul>
-                        <a href="tour4.html" class="btn btn-outline">Learn More</a>
+                        <a href="tour4.html.php" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
 
@@ -166,7 +166,7 @@
                             <li>Bumthang Valley</li>
                             <li>All major destinations</li>
                         </ul>
-                        <a href="tour5.html" class="btn btn-outline">Learn More</a>
+                        <a href="tour5.html.php" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
 
@@ -183,7 +183,7 @@
                             <li>Private moments</li>
                             <li>Luxury accommodations</li>
                         </ul>
-                        <a href="tour6.html" class="btn btn-outline">Learn More</a>
+                        <a href="tour6.html.php" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -427,36 +427,7 @@
 
 
     <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    document.querySelector('.nav-links').classList.remove('active');
-                }
-            });
-        });
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+        <?php include 'Js/javascript.js'; ?>
     </script>
 </body>
 
