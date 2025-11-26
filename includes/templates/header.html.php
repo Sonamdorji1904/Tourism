@@ -9,9 +9,10 @@ echo <<<HEADER_HTML
                 <ul class="nav-links">
                     <li><a href="index.html.php">Home</a></li>
                     <li><a href="tours.html.php">Tours</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
                     <li><a href="festivals.html.php">Festivals</a></li>
+                    <li><a href="treks.html.php">Treks</a></li>
                     <li><a href="contact.html.php">Contact</a></li>
+                    <li><a href="about.html.php">About Us</a></li>
                 </ul>
                 <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
             </div>

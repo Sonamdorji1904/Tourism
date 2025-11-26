@@ -333,7 +333,7 @@
                     <div class="tour-content">
                         <h3>Taste of Happiness</h3>
                         <p>Immerse yourself in Bhutan's rich culture and breathtaking landscapes.</p>
-                        <a href="tour-detail.html" class="btn btn-outline">View Details</a>
+                        <a href="tour-detail.html.php" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
 
@@ -345,7 +345,7 @@
                     <div class="tour-content">
                         <h3>The Living Heritage</h3>
                         <p>Discover Bhutan's living heritage where ancient traditions meet natural beauty.</p>
-                        <a href="tour-detail.html" class="btn btn-outline">View Details</a>
+                        <a href="tour-detail.html.php" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
 
@@ -357,7 +357,7 @@
                     <div class="tour-content">
                         <h3>Honeymoon Package</h3>
                         <p>Celebrate your love in the mystical Kingdom of Bhutan.</p>
-                        <a href="tour-detail.html" class="btn btn-outline">View Details</a>
+                        <a href="tour-detail.html.php" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
             </div>
@@ -369,19 +369,7 @@
 
 
     <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+        <?php include 'Js/javascript.js'; ?>
     </script>
 </body>
 

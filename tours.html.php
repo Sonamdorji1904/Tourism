@@ -93,7 +93,7 @@
                         </div>
 
                         <div class="tour-actions">
-                            <a href="tour-detail.html" class="btn btn-primary">View Details</a>
+                            <a href="tour-detail.html.php" class="btn btn-primary">View Details</a>
                             <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                         </div>
 
                         <div class="tour-actions">
-                            <a href="tour2.html" class="btn btn-primary">View Details</a>
+                            <a href="tour2.html.php" class="btn btn-primary">View Details</a>
                             <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                         </div>
 
                         <div class="tour-actions">
-                            <a href="tour3.html" class="btn btn-primary">View Details</a>
+                            <a href="tour3.html.php" class="btn btn-primary">View Details</a>
                             <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
                         </div>
 
                         <div class="tour-actions">
-                            <a href="tour4.html" class="btn btn-primary">View Details</a>
+                            <a href="tour4.html.php" class="btn btn-primary">View Details</a>
                             <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
@@ -225,7 +225,7 @@
                         </div>
 
                         <div class="tour-actions">
-                            <a href="tour5.html" class="btn btn-primary">View Details</a>
+                            <a href="tour5.html.php" class="btn btn-primary">View Details</a>
                             <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
@@ -259,7 +259,7 @@
                         </div>
 
                         <div class="tour-actions">
-                            <a href="tour6.html" class="btn btn-primary">View Details</a>
+                            <a href="tour6.html.php" class="btn btn-primary">View Details</a>
                             <a href="contact.html.php" class="btn btn-outline">Book Now</a>
                         </div>
                     </div>
@@ -313,19 +313,7 @@
     <?php require_once 'includes/templates/footer.html.php'; ?>
 
     <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+        <?php include 'Js/javascript.js'; ?>
     </script>
 </body>
 

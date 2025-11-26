@@ -103,6 +103,10 @@ img {
   color: var(--accent-light);
 }
 
+.nav-links a:active {
+  color: var(--accent);
+}
+
 .mobile-menu-btn {
   display: none;
   background: none;
