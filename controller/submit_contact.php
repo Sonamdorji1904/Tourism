@@ -1,10 +1,12 @@
 <?php
-require_once "./Contact.php";
 require "../vendor/autoload.php";
-require "../helper/SendMailService.php";
+require_once "./Contact.php";
+require_once "../helper/MailService.php";
 
-// Static admin email
-$adminEmail = "suraceallay@gmail.com";
+$adminEmailsString = ConfigLoader::env('AdminMailAddress');
+$adminEmails = $adminEmailsString ? explode(',', $adminEmailsString) : ["fallback@example.com"];
+$adminEmail = trim($adminEmails[0]);
+
 
 // === 1. Validate Required Fields ===
 $requiredFields = ["firstName", "email", "country", "travelDate", "travelers"];
@@ -40,7 +42,6 @@ $data = [
 $contact = new Contact();
 $saveStatus = $contact->saveMessage($data);
 
-
 $emailMessage = "
 A new contact form has been submitted:
 
@@ -58,23 +59,32 @@ Message:
 {$data['message']}
 ";
 
-SendMailService::sendMail(
+// === 4. Send Mail using MailService ===
+$mailStatus = MailService::send(
     $adminEmail,
-    $data["full_name"],
+    "Site Admin",
     "New Contact Form Submission – Happiness Horizon Travel",
     $emailMessage
 );
 
 // === 5. Final Response ===
-if ($saveStatus) {
+if ($saveStatus && $mailStatus) {
     echo "<script>
             alert('Thank you! Your message has been sent successfully.');
             window.location.href = '../index.html.php';
           </script>";
     exit();
 } else {
+    $errorMessage = "Something went wrong. ";
+    if (!$saveStatus) {
+        $errorMessage .= "Database save failed. ";
+    }
+    if (!$mailStatus) {
+        $errorMessage .= "Email sending failed. Please check server error logs.";
+    }
+
     echo "<script>
-            alert('Something went wrong. Please try again.');
+            alert('$errorMessage');
             window.history.back();
           </script>";
     exit();
