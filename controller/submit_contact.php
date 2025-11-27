@@ -1,0 +1,81 @@
+<?php
+require_once "./Contact.php";
+require "../vendor/autoload.php";
+require "../helper/SendMailService.php";
+
+// Static admin email
+$adminEmail = "suraceallay@gmail.com";
+
+// === 1. Validate Required Fields ===
+$requiredFields = ["firstName", "email", "country", "travelDate", "travelers"];
+
+foreach ($requiredFields as $field) {
+    if (empty($_POST[$field])) {
+        echo "<script>
+            alert('Please fill all required fields.');
+            window.history.back();
+          </script>";
+    }
+}
+
+
+$first = trim($_POST["firstName"]);
+$last  = trim($_POST["lastName"]);
+
+$fullName = $first . " " . $last;
+
+$data = [
+    "full_name"   => htmlspecialchars($fullName),
+    "email"        => filter_var($_POST["email"], FILTER_SANITIZE_EMAIL),
+    "phone"        => htmlspecialchars(trim($_POST["phone"] ?? "")),
+    "country"      => htmlspecialchars(trim($_POST["country"] ?? "")),
+    "tour"         => htmlspecialchars(trim($_POST["tour"] ?? "")),
+    "travelers"    => intval($_POST["travelers"] ?? 1),
+    "travel_date"  => $_POST["travelDate"] ?? null,
+    "meal"         => htmlspecialchars(trim($_POST["meal"] ?? "")),
+    "message"      => htmlspecialchars(trim($_POST["message"])),
+];
+
+// === 3. Save to Database ===
+$contact = new Contact();
+$saveStatus = $contact->saveMessage($data);
+
+
+$emailMessage = "
+A new contact form has been submitted:
+
+Name: {$data['full_name']}
+Email: {$data['email']}
+Phone: {$data['phone']}
+Country: {$data['country']}
+
+Tour Package: {$data['tour']}
+Travelers: {$data['travelers']}
+Travel Date: {$data['travel_date']}
+Meal Plan: {$data['meal']}
+
+Message:
+{$data['message']}
+";
+
+SendMailService::sendMail(
+    $adminEmail,
+    $data["full_name"],
+    "New Contact Form Submission – Happiness Horizon Travel",
+    $emailMessage
+);
+
+// === 5. Final Response ===
+if ($saveStatus) {
+    echo "<script>
+            alert('Thank you! Your message has been sent successfully.');
+            window.location.href = '../index.html.php';
+          </script>";
+    exit();
+} else {
+    echo "<script>
+            alert('Something went wrong. Please try again.');
+            window.history.back();
+          </script>";
+    exit();
+}

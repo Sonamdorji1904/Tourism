@@ -33,7 +33,7 @@
                     <h2>Send Us a Message</h2>
                     <p>Fill out the form below and we'll get back to you within 24 hours</p>
 
-                    <form class="contact-form-detailed">
+                    <form class="contact-form-detailed" action="./controller/submit_contact.php" method="post">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">First Name *</label>
@@ -41,7 +41,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="lastName">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" required>
+                                <input type="text" id="lastName" name="lastName">
                             </div>
                         </div>
 
